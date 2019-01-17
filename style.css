@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	padding: 1rem .5rem .5rem .5rem;
+	background: #0b0b0b;
+}
+
+h1 {
+	font-family: Bungee Shade;
+	font-size: 4.8vw;
+	font-size-adjust: unset;
+	font-weight: 100;
+	margin: .3em;
+	letter-spacing: .12em;
+	text-align: left;
+	text-transform: uppercase;
+	border-bottom: 2px solid lightgray;
+	padding-bottom: .4em;
+	width: 63.32%;
+	color: lightgray;
+}
+
+main.gallery {
+	display: -ms-flexbox;
+	-ms-flexbox-wrap: wrap;
+	-ms-flexbox-direction: column;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.row_cell {
+	-webki-box-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+	width: 30%;
+	margin: 1.66%;
+}
+
+.row_cell img {
+	width: 100%;
+	filter: sepia(100%);
+}
+
+@media screen and (max-width: 800px) {
+	.row_cell {
+		width: 46%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.row_cell {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.row_cell {
+		margin: 0;
+		padding: 5px;
+	}
+}
+
+footer {
+	font-family: Bungee;
+	font-size: .7em;
+	font-weight: 100;
+	color: gray;
+	text-align: right;
+	margin-right: 1rem;
+	letter-spacing: .2em;
+}
+
+a {
+	color: inherit;
+}
