@@ -44,6 +44,15 @@ main.gallery {
 	filter: sepia(100%);
 }
 
+@media screen and
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+	/* Retina-specific */
+	.row_cell {
+		width: 46%;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.row_cell {
 		width: 46%;
